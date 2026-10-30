@@ -1,0 +1,49 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #0B5FFF;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-accent-500: #F59E0B;
+  --color-accent-600: #D97706;
+  --color-surface: #ffffff;
+  --color-surface-muted: #F8FAFC;
+  --color-surface-border: #E2E8F0;
+  --color-ink: #0F172A;
+  --color-ink-muted: #475569;
+  --color-ink-subtle: #94A3B8;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --shadow-card: 0 1px 2px rgba(15,23,42,.04), 0 4px 12px rgba(15,23,42,.06);
+  --shadow-pop: 0 8px 32px rgba(15,23,42,.12);
+}
+
+body {
+  background-color: var(--color-surface-muted);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .container-page { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .container-page { padding-left: 2rem; padding-right: 2rem; }
+}
